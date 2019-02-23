@@ -16,8 +16,10 @@
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
-    "javascript",
-    "javascriptreact",
+    "javascript", {
+      "language": "vue",
+      "autoFix": true
+    },
     "html",
     "vue"
   ],
