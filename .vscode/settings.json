@@ -29,5 +29,8 @@
       ".jsx",
       ".vue"
     ]
+  },
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}"
   }
 }

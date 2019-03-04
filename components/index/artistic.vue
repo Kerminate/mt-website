@@ -64,35 +64,35 @@ export default {
     // }
   },
   methods: {
-    // over: async function (e) {
-    //   const dom = e.target
-    //   const tag = dom.tagName.toLowerCase()
-    //   const self = this
-    //   if (tag === 'dd') {
-    //     this.kind = dom.getAttribute('kind')
-    //     const keyword = dom.getAttribute('keyword')
-    //     const { status, data: { count, pois } } = await self.$axios.get('/search/resultsByKeywords', {
-    //       params: {
-    //         keyword,
-    //         city: this.$store.state.geo.position.city
-    //       }
-    //     })
-    //     if (status === 200 && count > 0) {
-    //       const r = pois.filter(item => item.photos.length).map((item, index) => {
-    //         return {
-    //           title: item.name,
-    //           pos: item.type.split(';')[0],
-    //           price: item.biz_ext.cost || '暂无',
-    //           img: item.photos[0].url,
-    //           url: '//abc.com'
-    //         }
-    //       })
-    //       this.list[this.kind] = r.slice(0, 9)
-    //     } else {
-    //       this.list[this.kind] = []
-    //     }
-    //   }
-    // }
+    over: async function (e) {
+      // const dom = e.target
+      // const tag = dom.tagName.toLowerCase()
+      // const self = this
+      // if (tag === 'dd') {
+      //   this.kind = dom.getAttribute('kind')
+      //   const keyword = dom.getAttribute('keyword')
+      //   const { status, data: { count, pois } } = await self.$axios.get('/search/resultsByKeywords', {
+      //     params: {
+      //       keyword,
+      //       city: this.$store.state.geo.position.city
+      //     }
+      //   })
+      //   if (status === 200 && count > 0) {
+      //     const r = pois.filter(item => item.photos.length).map((item, index) => {
+      //       return {
+      //         title: item.name,
+      //         pos: item.type.split(';')[0],
+      //         price: item.biz_ext.cost || '暂无',
+      //         img: item.photos[0].url,
+      //         url: '//abc.com'
+      //       }
+      //     })
+      //     this.list[this.kind] = r.slice(0, 9)
+      //   } else {
+      //     this.list[this.kind] = []
+      //   }
+      // }
+    }
   }
 }
 </script>

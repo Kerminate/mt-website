@@ -1,6 +1,6 @@
 <template>
   <el-container class="layout-default">
-    <el-header>
+    <el-header height="100%">
       <my-header />
     </el-header>
     <el-main>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import MyHeader from '@/components/public/header/index.vue'
+import MyHeader from '@/components/public/header/index'
 import MyFooter from '@/components/public/footer/index'
 export default {
   components: {
