@@ -107,7 +107,7 @@ router.post('/signin', async (ctx, next) => {
 
 router.post('/verify', async (ctx, next) => {
   const username = ctx.request.body.username
-  const saveExpire = await Store.hget(`nodemail:${username}, 'expire`)
+  const saveExpire = await Store.hget(`nodemail:${username}`, 'expire')
   if (saveExpire && new Date().getTime() - saveExpire < 0) {
     ctx.body = {
       code: -1,

@@ -69,6 +69,26 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    // babel: {
+    //   presets({
+    //     isServer
+    //   }) {
+    //     const targets = isServer ? {
+    //       node: 'current'
+    //     } : {
+    //       ie: 11
+    //     }
+    //     return [
+    //       [
+    //         require.resolve('@nuxt/babel-preset-app'),
+    //         {
+    //           buildTarget: isServer ? 'server' : 'client',
+    //           targets
+    //         }
+    //       ]
+    //     ]
+    //   }
+    // },
     transpile: [/^element-ui/],
 
     /*

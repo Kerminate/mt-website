@@ -1,5 +1,7 @@
+import config from '../../config'
+
 export default {
-  dbs: 'mongodb://127.0.0.1:27017',
+  dbs: 'mongodb://127.0.0.1/mt',
   redis: {
     get host() {
       return '127.0.0.1'
@@ -13,10 +15,10 @@ export default {
       return 'smtp.qq.com'
     },
     get user() {
-      return '714327762@qq.com'
+      return config.emailAddr
     },
     get pass() {
-      return ''
+      return config.emailPass
     },
     get code() {
       return () => {
