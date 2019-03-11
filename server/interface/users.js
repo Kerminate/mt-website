@@ -22,7 +22,7 @@ router.post('/signup', async (ctx) => {
 
   if (code) {
     const saveCode = await Store.hget(`nodemail:${username}`, 'code')
-    const saveExpire = await Store.hget(`nodeemail:${username}, 'expire`)
+    const saveExpire = await Store.hget(`nodeemail:${username}`, 'expire')
     if (code === saveCode) {
       if (new Date().getTime() - saveExpire > 0) {
         ctx.body = {
@@ -43,7 +43,7 @@ router.post('/signup', async (ctx) => {
     }
   }
 
-  const user = await User.fing({
+  const user = await User.find({
     username
   })
   if (user.length) {
